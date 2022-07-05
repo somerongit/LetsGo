@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-
-	"rsc.io/quote/v4"
 )
 
 func main() {
-	fmt.Printf("Hello " + quote.Go())
+	var num int64
+	fmt.Scanf("%d", &num)
+	print(checkArmstrong(num))
 }
