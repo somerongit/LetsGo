@@ -1,0 +1,7 @@
+https://go.dev/doc/tutorial/getting-started
+
+cd to src folder
+
+go mod init folderName/projectName
+go mod tidy
+go run .
