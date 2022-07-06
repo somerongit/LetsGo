@@ -33,4 +33,7 @@ func main() {
 	end2 := time.Since(start2)
 	println("Time taken(Recursion): ", end2)
 
+	print("\nLCM of input values=> ")
+	print(getLcm(num, num1))
+
 }
