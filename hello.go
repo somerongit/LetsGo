@@ -6,15 +6,17 @@ import (
 )
 
 func main() {
-	var num int
-	print("Enter the pattern size: ")
+	var num, num1 int64
+	print("Enter 1st input value: ")
 	fmt.Scan(&num)
+	print("Enter 2nd input value: ")
+	fmt.Scan(&num1)
 
-	println("Input pattern size is: ", num)
+	println("Input pattern size is: ", num, ",", num1)
 
-	print("\nPattern is=>\n")
+	print("\nResult is=> ")
 	// start := time.Now()
-	getPattern(num)
+	println(checkAmicable(num, num1))
 	// end := time.Since(start)
 	// println("Time taken(BruteForce): ", end)
 
