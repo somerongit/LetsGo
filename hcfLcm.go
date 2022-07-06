@@ -10,6 +10,10 @@ then assign the count to gcd
 */
 
 func getHcfBruteForce(num, num1 int64) int64 {
+	if num == num1 {
+		return num
+	}
+
 	if num == 0 {
 		return num1
 	} else if num1 == 0 {
@@ -40,6 +44,10 @@ numbers but also by replacing the
 larger number with their sum.
 */
 func getHcfNew(num, num1 int64) int64 {
+	if num == num1 {
+		return num
+	}
+
 	if num == 0 {
 		return num1
 	}
@@ -58,6 +66,10 @@ func getHcfNew(num, num1 int64) int64 {
 // Euclid algo: gcd(a,b) => gcd(b,a%b)
 
 func getHcfRecursion(num, num1 int64) int64 {
+	if num == num1 {
+		return num
+	}
+
 	if num1 == 0 {
 		return num
 	}
@@ -67,5 +79,14 @@ func getHcfRecursion(num, num1 int64) int64 {
 // LCM calculation
 
 func getLcm(num, num1 int64) int64 {
+	if num == num1 {
+		return num
+	}
+	if num == 0 {
+		return num1
+	} else if num1 == 0 {
+		return num
+	}
+
 	return (num * num1) / getHcfRecursion(num, num1)
 }
