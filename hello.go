@@ -2,21 +2,21 @@ package main
 
 import (
 	"fmt"
-	"time"
+	// "time"
 )
 
 func main() {
-	var num int64
-	print("Enter the range: ")
+	var num int
+	print("Enter the pattern size: ")
 	fmt.Scan(&num)
 
-	println("Input value is: ", num)
+	println("Input pattern size is: ", num)
 
-	print("\nSum of series for input range=> ")
-	start := time.Now()
-	println(getSeriesSum(num))
-	end := time.Since(start)
-	println("Time taken(BruteForce): ", end)
+	print("\nPattern is=>\n")
+	// start := time.Now()
+	getPattern(num)
+	// end := time.Since(start)
+	// println("Time taken(BruteForce): ", end)
 
 	// print("\nGCD of input values=> ")
 	// start1 := time.Now()
