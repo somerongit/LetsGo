@@ -1,22 +1,24 @@
 package main
 
-import (
-	"fmt"
-	// "time"
-)
+// import (
+// 	"fmt"
+//  "time"
+// )
 
 func main() {
-	var num, num1 int64
-	print("Enter 1st input value: ")
-	fmt.Scan(&num)
-	print("Enter 2nd input value: ")
-	fmt.Scan(&num1)
 
-	println("Input pattern size is: ", num, ",", num1)
+	runWaitGroups()
 
-	print("\nResult is=> ")
+	// var num, num1 int64
+	// print("Enter 1st input value: ")
+	// fmt.Scan(&num)
+	// print("Enter 2nd input value: ")
+	// fmt.Scan(&num1)
+
+	// println("Input pattern size is: ", num, ",", num1)
+
+	// print("\nResult is=> ")
 	// start := time.Now()
-	println(checkAmicable(num, num1))
 	// end := time.Since(start)
 	// println("Time taken(BruteForce): ", end)
 
