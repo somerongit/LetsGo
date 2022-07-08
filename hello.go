@@ -7,7 +7,7 @@ package main
 
 func main() {
 
-	checkBufferChannelWithCustomDataType()
+	paly()
 
 	// var num, num1 int64
 	// print("Enter 1st input value: ")
