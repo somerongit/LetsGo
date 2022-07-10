@@ -5,3 +5,5 @@ cd to src folder
 go mod init folderName/projectName
 go mod tidy
 go run .
+
+go mod vendor  // production ready
