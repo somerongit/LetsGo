@@ -1,37 +1,23 @@
 package main
 
-// import (
-// 	"fmt"
-//  "time"
-// )
+import (
+	"fmt"
+	"github.com/joho/godotenv"
+	"os"
+)
 
 func main() {
 
-	paly()
-
-	// var num, num1 int64
-	// print("Enter 1st input value: ")
-	// fmt.Scan(&num)
-	// print("Enter 2nd input value: ")
-	// fmt.Scan(&num1)
-
-	// println("Input pattern size is: ", num, ",", num1)
-
-	// print("\nResult is=> ")
-	// start := time.Now()
-	// end := time.Since(start)
-	// println("Time taken(BruteForce): ", end)
-
-	// print("\nGCD of input values=> ")
-	// start1 := time.Now()
-	// println(getHcfNew(num))
-	// end1 := time.Since(start1)
-	// println("Time taken(New): ", end1)
-
-	// print("\nGCD of input values=> ")
-	// start2 := time.Now()
-	// println(getHcfRecursion(num))
-	// end2 := time.Since(start2)
-	// println("Time taken(Recursion): ", end2)
-
+	envErr := godotenv.Load(".env")
+	if envErr != nil {
+		fmt.Printf("Could not load .env file")
+		os.Exit(1)
+	}
+	envMap, mapErr := godotenv.Read(".env")
+	if mapErr != nil {
+		fmt.Printf("Error loading .env into map[string]string\n")
+		os.Exit(1)
+	}
+	fmt.Println(envMap["PORT"])
+	fmt.Printf(os.Getenv("PORT"))
 }
